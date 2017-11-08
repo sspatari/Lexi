@@ -6,4 +6,5 @@ package com.example.strongheart.lexi.commons.adapter
 object AdapterConstants {
     val LANGUAGE_SELECTION = 1
     val TEXT_INPUT = 2
+    val SEARCHED_TRANSLATION = 3
 }

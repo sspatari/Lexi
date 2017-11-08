@@ -4,28 +4,14 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
-import android.support.v7.widget.LinearLayoutManager
 import com.example.strongheart.lexi.features.MainFragment
 
 
 class MainActivity : AppCompatActivity() {
 
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
-//
-//        my_recycler_view.layoutManager = LinearLayoutManager(this)
-//        my_recycler_view.setHasFixedSize(true)
-//
-//        val myDataset= Array(20, {x -> x.toString()})
-//        my_recycler_view.adapter = MyAdapter(myDataset)
-//
-//    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         if (savedInstanceState == null) {
             changeFragment(MainFragment())
         }

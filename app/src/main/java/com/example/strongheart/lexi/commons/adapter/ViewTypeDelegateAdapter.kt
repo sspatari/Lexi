@@ -7,7 +7,8 @@ import android.view.ViewGroup
  * Created by strongheart on 11/5/17.
  */
 interface ViewTypeDelegateAdapter {
-    fun onCreateViewHolder(parent: ViewGroup): RecyclerView
 
-    fun onBindViewHolder(holder: RecyclerView, item: ViewType)
+    fun onCreateViewHolder(parent: ViewGroup): RecyclerView.ViewHolder
+
+    fun onBindViewHolder(holder: RecyclerView.ViewHolder, item: ViewType)
 }
